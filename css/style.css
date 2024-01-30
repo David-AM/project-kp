@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3E8EEE;
+    padding: 1rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    width: 25%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header .navbar  a, label {
+    font-family: "Patua One";
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+  
+  header .navbar a:hover {
+    top: -10px;
+  }
+
+header .navbar #profile {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown:hover #profile {
+    transition: all 0.5s ease;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content #sign-out {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #3E8EEE;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown-content #sign-out:hover {
+    width: 100%;
+    background-color: #3E8EEE;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border-radius: .5rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#menu-bar {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .5rem;
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: 520px;
+    background: #3E8EEE;
+    position: fixed;
+}
+.home {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1.5rem;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    /* padding-top: 6.5rem; */
+    text-align: justify;
+}
+
+.home .content h3 {
+    margin-left: 100px;
+    font-size: 4rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 4;
+}
+
+.home .content h4 {
+    margin-left: 100px;
+    font-size: 3rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 4;
+}
+
+/* User Page */
+.home .content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.home .content .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.home .content .container .box {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 4;
+}
+
+.home .content h5 {
+    font-size: 1.2rem;
+    color: #3f3f3f;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+}
+
+.home .content .container .radio {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content .container .radio h6 {
+    font-size: 1rem;
+}
+
+.home .content .container .radio input {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #3E8EEE;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px #3E8EEE;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.home .content .container .radio input::before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+.home .content .container .radio input:checked::before {
+    background: #3E8EEE;
+    
+}
+
+.btn {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.btn .back {
+    background-color: #EE3E3E;
+    padding: .5rem 1.2rem;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 4;
+}
+
+.btn .back a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.btn .next {
+    background-color: #3E8EEE;
+    padding: .5rem 1.2rem;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 4;
+}
+
+.btn .next a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:768px) {
+    #menu-bar {
+        display: initial;
+        
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #3e8dee94;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1rem;
+        padding: 1rem;
+        display: block;
+        border-radius: 10px;
+        /* border: .2rem solid rgba(0, 0, 0, .1); */
+        background: #3e8dee86;
+    }
+
+    header .navbar i {
+        margin: 1rem;
+        padding: 1rem;
+        display: block;
+        border-radius: 10px;
+        /* border: .2rem solid rgba(0, 0, 0, .1); */
+        background: #3e8dee86;
+    }
+}
+
+
+
+
+.circle-1{
+    width: 800px;
+    height: 800px;
+    margin-top: 30rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 1;
+}
+
+.circle-2{
+    width: 600px;
+    height: 600px;
+    margin-top: 30rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 2;
+}
+
+.circle-3{
+    width: 400px;
+    height: 400px;
+    margin-top: 30rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 3;
+}
