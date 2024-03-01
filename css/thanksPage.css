@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Patua One';
+    /* height: 2500px; */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3E8EEE;
+    padding: 1rem 3%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    width: 75%;
+    padding: .5rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+header .navbar .navbar-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .navbar .navbar-list:hover {
+    top: -10px;
+}
+
+header .navbar #profile {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* .dropdown > span {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: .5rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    margin-left: -8rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    color: #3E8EEE;;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+#menu-bar {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .5rem;
+    display: none;
+}
+
+.bg{
+    display: flex;
+    width: 100%;
+    height: 420px;
+    background-color: #3E8EEE;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.circle-1, .circle-2, .circle-3 {
+    margin-top: 450px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    position: fixed;
+}
+
+.circle-1{
+    width: 800px;
+    height: 800px;
+    z-index: 1;
+}
+
+.circle-2{
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+}
+
+.circle-3{
+    width: 400px;
+    height: 400px;
+    z-index: 3;
+}
+
+.thanksCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanksCard > h1 {
+    font-size: 3rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.thanksCard > h2 {
+    font-size: 2rem;
+    color: white;
+    
+}

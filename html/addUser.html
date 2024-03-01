@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="/img/icon.png">
+    <link rel="stylesheet" href="css/addUser.css">
+    <title>Admin | Add User</title>
+</head>
+
+<body id="top">
+    <header>
+        <a href="/adminPage.html">
+            <img class="logo" src="img/logo.png" alt="LOGO">
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a class="navbar-list" href="/setPertanyaan.html">Setting Pertanyaan</a>
+            <a class="navbar-list" href="/setUser.html">Setting Karyawan</a>
+            <a class="navbar-list" href="/">Result</a>
+            <div class="dropdown">
+                <!-- <span>Admin</span> -->
+                <i onclick="myFunction()" id="profile" class="fas fa-user"></i>
+                <i onclick="myFunction()" id="profile" class="fas fa-caret-down ml-2"></i>
+                <div id="myDropdown" class="dropdown-content">
+                <a class="dropdown-item" href="Delete.html">
+                    <i class="fas fa-trash"> Delete Account</i>
+                </a>
+                <a class="dropdown-item" href="login.html">
+                    <i class="fas fa-sign-out-alt"> Sign Out</i>
+                </a>
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <center><h1 style="color: #3E8EEE; margin: 5% 0;">Data Karyawan PT. PAL Indonesia</h1></center>
+
+        <div class="user">
+            <h5 class="title">NIP :</h5>
+                <input type="text" name="nip" id="nip" placeholder="Masukkan NIP">
+            <h5 class="title">Nama :</h5>
+                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama">
+            <h5 class="title">Jabatan :</h5>
+                <input type="text" name="jabatan" id="jabatan" placeholder="Masukkan Jabatan">
+        </div>
+        <div class="pilih">
+            <div class="divisi">
+                <h5 class="title">Divisi :</h5>
+                <select name="divisi" required="required">
+                    <option value="" selected disabled>-- Select Division --</option>
+                    <option value="1">Divisi Rekayasa Umum</option>
+                    <option value="2">Divisi Kapal Niaga</option>
+                    <option value="3">Divisi Kapal Perang</option>
+                    <option value="4">Divisi Kapal Selam</option>
+                    <option value="5">Divisi Pemeliharaan & Perbaikan</option>
+                    <option value="6">Divisi Production Management Office</option>
+                    <option value="7">Divisi Pemasaran & Penjualan Kapal</option>
+                    <option value="8">Divisi Penjualan Rekumhar</option>
+                    <option value="9">Divisi Supply Chain</option>
+                    <option value="10">Divisi Kawasan & K3LH</option>
+                    <option value="11">Divisi Perencanaan Strategis Perusahaan</option>
+                    <option value="12">Divisi Perbendaharaan</option>
+                    <option value="13">Divisi Akuntansi</option>
+                    <option value="14">Divisi Human Capital Management</option>
+                    <option value="15">Divisi Manajemen Risiko</option>
+                    <option value="16">Divisi Office Of The Beard</option>
+                    <option value="17">Divisi Legal</option>
+                    <option value="18">Divisi Technology & Quality Assurance</option>
+                    <option value="19">Divisi Teknologi Informasi</option>
+                    <option value="20">Divisi Desain</option>
+                </select>
+            </div>
+            <div class="otoritas">
+                <h5 class="title">Otoritas :</h5>
+                <select name="otoritas" required="required">
+                    <option value="" selected disabled>-- Select --</option>
+                    <option value="0">User</option>
+                    <option value="1">Admin</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button onclick="cancel(); window.location.href='/setUser.html'" class="cancel">Cancel</button>
+            <button onclick="save(); window.location.href='/save.html'" class="save">Save</button>
+        </div>
+    </main>
+
+    <a href="#top" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+</html>

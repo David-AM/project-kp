@@ -1,0 +1,269 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Patua One';
+    /* height: 2500px; */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3E8EEE;
+    padding: 1rem 3%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    width: 75%;
+    padding: .5rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+header .navbar .navbar-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .navbar .navbar-list:hover {
+    top: -10px;
+}
+
+header .navbar #profile {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* .dropdown > span {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: .5rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    margin-left: -8rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    color: #3E8EEE;;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+#menu-bar {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .5rem;
+    display: none;
+}
+
+.bg{
+    display: flex;
+    width: 100%;
+    height: 420px;
+    background-color: #3E8EEE;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.circle-1, .circle-2, .circle-3 {
+    margin-top: 450px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    position: fixed;
+}
+
+.circle-1{
+    width: 800px;
+    height: 800px;
+    z-index: 1;
+}
+
+.circle-2{
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+}
+
+.circle-3{
+    width: 400px;
+    height: 400px;
+    z-index: 3;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title {
+    font-size: 2.5rem;
+    color: white;
+    z-index: 100;
+}
+
+.card {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 4;
+}
+
+.card .pertanyaan {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #3f3f3f;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+}
+.card .radio {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .radio h6 {
+    font-size: 1rem;
+}
+
+.card .radio input {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #3E8EEE;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px #3E8EEE;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    /* position: absolute;
+    opacity: 1; */
+}
+
+.card .radio input::before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+.card .radio input:checked::before {
+    background: #3E8EEE;
+}
+.card input.submit{
+    display: flex;
+    justify-content: center;
+    /* gap: 0 2rem; */
+    width: 7rem;
+    text-align: center;
+    margin: .5rem 20rem;
+    padding: .5rem .2rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 4;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Patua One';
+    cursor: pointer;
+    background-color: #1746A2;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 0 2rem;
+}
+.back, 
+.next {
+    width: 7rem;
+    text-align: center;
+    margin: 2rem 0;
+    padding: .5rem .2rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 4;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Patua One';
+    cursor: pointer;
+}
+
+.back {
+    background-color: #EE3E3e;
+}
+
+.next {
+    background-color: #1746A2;
+}
+
+#scroll-top {
+    position: fixed;
+    top: 100%;
+    right: 2rem;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    background: #1746A2;
+    color: #fff;
+    border-radius: .7rem;
+    transition: 0.2s linear;
+    z-index: 100;
+}
+
+#scroll-top.active {
+    top: calc(100% - 5rem);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Stacked Inputs</title>
+    <style>
+        /* Style untuk container */
+        .input-container {
+            position: relative;
+            width: 200px;
+            margin: 20px;
+        }
+
+        /* Style untuk input pertama */
+        .input1 {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style untuk input kedua */
+        .input2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            opacity: 0.5; /* Atur tingkat kejelasan sesuai keinginan */
+        }
+    </style>
+</head>
+<body>
+
+<div class="input-container">
+    <input type="text" class="input1" placeholder="Input Pertama">
+    <input type="text" class="input2" placeholder="Input Kedua">
+</div>
+
+</body>
+</html>

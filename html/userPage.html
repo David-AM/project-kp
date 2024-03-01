@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="/img/icon.png">
+    <link rel="stylesheet" href="css/userPage.css">
+    <title>User | Survey</title>
+</head>
+
+<body id="top">
+    <header>
+        <a href="/userPage.html">
+            <img class="logo" src="img/logo.png" alt="LOGO">
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <!-- <span>Admin</span> -->
+                <i onclick="myFunction()" id="profile" class="fas fa-user"></i>
+                <i onclick="myFunction()" id="profile" class="fas fa-caret-down ml-2"></i>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="dropdown-item" href="Delete.html">
+                        <i class="fas fa-trash"> Delete Account</i>
+                    </a>
+                    <a class="dropdown-item" href="login.html">
+                        <i class="fas fa-sign-out-alt"> Sign Out</i>
+                    </a>
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+    </div>
+
+    <main>
+        <h1 class="title">Survey Karyawan PT. PAL Indonesia</h1>
+        <div class="box">
+            <h5 class="pertanyaan">Pertanyaan 1</h5>
+            <div class="radio">
+                <h6>Tidak Puas</h6>
+                <input type="radio" name="Nilai" id="TP">
+                <input type="radio" name="Nilai" id="CP">
+                <input type="radio" name="Nilai" id="N">
+                <input type="radio" name="Nilai" id="P">
+                <input type="radio" name="Nilai" id="SP">
+                <h6>Sangat Puas</h6>
+            </div>
+        </div>
+
+        <div class="box">
+            <h5 class="pertanyaan">Pertanyaan 2</h5>
+            <div class="radio">
+                <h6>Tidak Puas</h6>
+                <input type="radio" name="Nilai1" id="TP">
+                <input type="radio" name="Nilai1" id="CP">
+                <input type="radio" name="Nilai1" id="N">
+                <input type="radio" name="Nilai1" id="P">
+                <input type="radio" name="Nilai1" id="SP">
+                <h6>Sangat Puas</h6>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="btn">
+            <button onclick="window.location.href='/back.html'" class="back">Back</button>
+            <button onclick="window.location.href='/next.html'" class="next">Next</button>
+        </div>
+    </footer>
+
+    <a href="#top" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+</html>

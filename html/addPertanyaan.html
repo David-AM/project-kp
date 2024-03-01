@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="/img/icon.png">
+    <link rel="stylesheet" href="css/addPertanyaan.css">
+    <title>Admin | Add Question</title>
+</head>
+
+<body id="top">
+    <header>
+        <a href="/adminPage.html">
+            <img class="logo" src="img/logo.png" alt="LOGO">
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a class="navbar-list" href="/setPertanyaan.html">Setting Pertanyaan</a>
+            <a class="navbar-list" href="/setUser.html">Setting Karyawan</a>
+            <a class="navbar-list" href="/">Result</a>
+            <div class="dropdown">
+                <!-- <span>Admin</span> -->
+                <i onclick="myFunction()" id="profile" class="fas fa-user"></i>
+                <i onclick="myFunction()" id="profile" class="fas fa-caret-down ml-2"></i>
+                <div id="myDropdown" class="dropdown-content">
+                <a class="dropdown-item" href="Delete.html">
+                    <i class="fas fa-trash"> Delete Account</i>
+                </a>
+                <a class="dropdown-item" href="login.html">
+                    <i class="fas fa-sign-out-alt"> Sign Out</i>
+                </a>
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <center><h1 style="color: #3E8EEE; margin: 5% 0;">Data Pertanyaan</h1></center>
+
+        <div class="kategori">
+            <h5 class="title">Kategori :</h5>
+            <input type="text" name="kategori" id="kategori" placeholder="Masukkan Kategori">
+        </div>
+        <div class="jumlah">
+            <h5 class="title">Banyak Pertanyaan :</h5>
+            <input type="text" name="jumlah" id="jumlah" placeholder="Masukkkan Jumlah">
+        </div>
+        <div class="pertanyaan">
+            <h5 class="title">Pertanyaan :</h5>
+            <input type="text" name="pertanyaan" id="pertanyaan" placeholder="Masukkan Pertanyaan">
+        </div>
+        <div class="nilai">
+            <h5 class="title">Nilai Jawaban :</h5>
+            <div class="var">
+                <h5 class="title">Sangat Puas :</h5>
+                <input type="text" name="SP" id="SP" placeholder="Masukkan Nilai">
+            </div>
+            <div class="var">
+                <h5 class="title">Puas :</h5>
+                <input type="text" name="P" id="P" placeholder="Masukkan Nilai">
+            </div>
+            <div class="var">
+                <h5 class="title">Netral :</h5>
+                <input type="text" name="N" id="N" placeholder="Masukkan Nilai">
+            </div>
+            <div class="var">
+                <h5 class="title">Cukup Puas :</h5>
+                <input type="text" name="CP" id="CP" placeholder="Masukkan Nilai">
+            </div>
+            <div class="var">
+                <h5 class="title">Kurang Puas :</h5>
+                <input type="text" name="KP" id="KP" placeholder="Masukkan Nilai">
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="cancel(); window.location.href='/setPertanyaan.html'" class="cancel">Cancel</button>
+            <button onclick="save(); window.location.href='/setPertanyaan.html'" class="save">Save</button>
+        </div>
+    </main>
+
+    <a href="#top" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+</html>

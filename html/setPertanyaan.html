@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="/img/icon.png">
+    <link rel="stylesheet" href="css/setPertanyaan.css">
+    <link rel="stylesheet" href="css/table.css">
+    <title>Admin | Set Question</title>
+</head>
+
+<body id="top">
+    <header>
+        <a href="/adminPage.html">
+            <img class="logo" src="img/logo.png" alt="LOGO">
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a class="navbar-list" href="/setPertanyaan.html">Setting Pertanyaan</a>
+            <a class="navbar-list" href="/setUser.html">Setting Karyawan</a>
+            <a class="navbar-list" href="/">Result</a>
+            <div class="dropdown">
+                <!-- <span>Admin</span> -->
+                <i onclick="myFunction()" id="profile" class="fas fa-user"></i>
+                <i onclick="myFunction()" id="profile" class="fas fa-caret-down ml-2"></i>
+                <div id="myDropdown" class="dropdown-content">
+                <a class="dropdown-item" href="Delete.html">
+                    <i class="fas fa-trash"> Delete Account</i>
+                </a>
+                <a class="dropdown-item" href="login.html">
+                    <i class="fas fa-sign-out-alt"> Sign Out</i>
+                </a>
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <center> <h1 style="color: #3E8EEE; margin-bottom: 5rem;">Daftar Pertanyaan Survey PT. PAL Indonesia</h1> </center>
+        <div class="btn">
+            <button onclick="window.location.href='/addPertanyaan.html'" class="add">Add</button>
+            <div class="search">
+                <input type="text" class="search-input" id="searchPertanyaan" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table class="table1">
+                <tr>
+                    <th>No</th>
+                    <th>Kategori</th>
+                    <th>Pertanyaan</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+    <a href="#top" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+</html>

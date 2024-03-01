@@ -1,0 +1,171 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Patua One';
+    /* height: 2500px; */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3E8EEE;
+    padding: 1rem 3%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    width: 75%;
+    padding: .5rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+header .navbar .navbar-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .navbar .navbar-list:hover {
+    top: -10px;
+}
+
+header .navbar #profile {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* .dropdown > span {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: .5rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    margin-left: -8rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    color: #3E8EEE;;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+#menu-bar {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .5rem;
+    display: none;
+}
+
+main {
+    background-color: white;
+}
+.title {
+    color: #3E8EEE;
+    margin: 5% 10%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn .add {
+    margin-right: 55%;
+    background-color: #3E8EEE;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 4;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Patua One';
+    cursor: pointer;
+}
+
+.btn .search {
+    position: relative;
+    background-color: #D9D9D9;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    
+}
+
+.btn .search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.btn .search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.btn .search .fas {
+    opacity: 50%;
+    align-items: center;
+}
+.user {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0 1rem;
+    margin: 2rem 9rem;
+}
+.user .nama {
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    background-color: #D9D9D9;
+    border: .1rem solid;
+    border-radius: .7rem;
+    width: 50%;
+    margin: 0;
+}
+
+.user .edit, .trash {
+    font-size: 1.5rem;
+    color: black;
+}

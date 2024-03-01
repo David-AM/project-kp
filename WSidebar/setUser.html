@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="/img/icon.png">
+    <link rel="stylesheet" href="css/setUser.css">
+    <title>Admin | Set User</title>
+</head>
+
+<body>
+    <header>
+        <a href="/Admin.html">
+            <img class="logo" src="img/logo.png" alt="LOGO">
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a class="navbar-list" href="#">Setting Pertanyaan</a>
+            <a class="navbar-list" href="/setUser.html">Setting Karyawan</a>
+            <a class="navbar-list" href="history.php">Result</a>
+            <a class="navbar-list" href="#about">About Us</a>
+            <div class="dropdown">
+                <!-- <span>Admin</span> -->
+                <i onclick="myFunction()" id="profile" class="fas fa-user"></i>
+                <i onclick="myFunction()" id="profile" class="fas fa-caret-down ml-2"></i>
+                <div id="myDropdown" class="dropdown-content">
+                <a class="dropdown-item" href="Delete.html">
+                    <i class="fas fa-trash"> Delete Account</i>
+                </a>
+                <a class="dropdown-item" href="login.html">
+                    <i class="fas fa-sign-out-alt"> Sign Out</i>
+                </a>
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title">Setting Karyawan</h1>
+        <div class="btn">
+            <button onclick="window.location.href='/addUser.html'" class="add">Add</button>
+            <div class="search">
+                <input type="text" class="search-input" id="searchUser" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        
+        <div class="user">
+            <h6 class="nama">User 1</h6>
+            <a href="" class="edit">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a href="" class="trash">
+                <i class="fas fa-trash"></i>
+            </a>
+        </div>
+        <div class="user">
+            <h6 class="nama">User 2</h6>
+            <a href="" class="edit">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a href="" class="trash">
+                <i class="fas fa-trash"></i>
+            </a>
+        </div>
+    </main>
+    
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+</html>

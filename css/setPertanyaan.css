@@ -1,0 +1,247 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Patua One';
+    /* /* height: 2500px; */ */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3E8EEE;
+    padding: 1rem 3%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    width: 75%;
+    padding: .5rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+header .navbar .navbar-list {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .navbar .navbar-list:hover {
+    top: -10px;
+}
+
+header .navbar #profile {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* .dropdown > span {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: .5rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    margin-left: -8rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    color: #3E8EEE;;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+#menu-bar {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .5rem;
+    display: none;
+}
+
+main {
+    background-color: white;
+    margin: 3rem 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn .add {
+    margin-right: 55%;
+    background-color: #3E8EEE;
+    padding: .5rem 2rem;
+    border-radius: .3rem;
+    position: relative;
+    z-index: 4;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Patua One';
+    cursor: pointer;
+}
+
+.btn .reset {
+    background: #d33;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .3rem;
+    position: relative;
+    margin-left: .5rem;
+    z-index: 4;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Patua One';
+    cursor: pointer;
+}
+
+.btn .filter select {
+    font-size: 1rem;
+    position: relative;
+    background-color: whitesmoke;
+    padding: .5rem ;
+    border-radius: .3rem;    
+}
+
+#edit, #delete {
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#edit {
+    background: #3085d6;
+}
+
+#delete {
+    background: #d33;
+    margin-left: .3rem;
+}
+
+footer {    
+    position: relative;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    gap: 60%;
+}
+
+.showEntries {
+    position: relative;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+.showEntries > select {
+    font-size: .8rem;
+    position: relative;
+    background-color: transparent;
+    padding: .2rem ;
+    border-radius: .3rem;
+}
+
+.showEntries > label {
+    font-size: 1rem;
+    
+}
+
+.valueEntries {
+    position: relative;
+    margin-left: 8rem;
+}
+
+.pagination {
+    margin-bottom: 30px;
+    display: inline-flex;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.pagination .activePage {
+    text-align: center;
+    vertical-align: text-bottom;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding: .2rem .5rem;
+    background: #3085d6;
+    border-radius: .2rem;
+}
+
+.pagination .non-activePage {
+    text-align: center;
+    vertical-align: text-bottom;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #3085d6;
+    padding: .2rem .5rem;
+    border: 1px solid;
+    border-radius: .2rem;
+}
+
+.pagination > a:hover {
+    color: white;
+    background: #3085d6;
+    border-radius: .2rem;
+}
+
+#scroll-top {
+    position: fixed;
+    top: 100%;
+    right: 2rem;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    background: #1746A2;
+    color: #fff;
+    border-radius: .7rem;
+    transition: 0.2s linear;
+    z-index: 100;
+}
+
+#scroll-top.active {
+    top: calc(100% - 5rem);
+}
